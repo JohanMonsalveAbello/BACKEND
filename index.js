@@ -26,7 +26,6 @@ const PUERTO = process.env.PORT || 9300;
 
 const conexion = mysql.createConnection({
     host: 'ghanjadrops.mysql.database.azure.com',
-    port: 3306,
     database: 'ghanjadrops',
     user: 'johan',
     password: 'MONSALVE#2006'
