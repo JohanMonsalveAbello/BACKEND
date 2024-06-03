@@ -22,14 +22,14 @@ app.use(function(req, res, next) {
     next();
 });
 
-const PUERTO = 9300;
+const PUERTO = process.env.PORT || 9300;
 
 const conexion = mysql.createConnection({
-    host: 'localhost',
+    host: 'ghanjadrops.mysql.database.azure.com',
     port: 3306,
     database: 'ghanjadrops',
-    user: 'root',
-    password: ''
+    user: 'johan',
+    password: 'MONSALVE#2006'
 });
 
 app.listen(PUERTO, () => {
